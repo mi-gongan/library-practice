@@ -1,10 +1,10 @@
 import React from 'react'
 import { useRecoilValue } from 'recoil';
-import TodoItemCreator from './TodoItemCreator.jsx';
-import TodoItem from './TodoItem.jsx';
+import TodoItemCreator from '../components/Todo/TodoItemCreator.jsx';
+import TodoItem from '../components/Todo/TodoItem.jsx';
 import { todoListState } from '../recoil/todo.js';
-import TodoListFilters from './TodoListFilters.jsx';
-import TodoListStats from './TodoListStats.jsx';
+import TodoListFilters from '../components/Todo/TodoListFilters.jsx';
+import TodoListStats from '../components/Todo/TodoListStats.jsx';
 
 function TodoList() {
   const todoList=useRecoilValue(todoListState);
